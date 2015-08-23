@@ -1,18 +1,33 @@
-![](images/photo_browser_view.png)
+//
+//  ViewController.m
+//  PhotoBrowserViewController
+//
+//  Created by apple on 8/23/15.
+//  Copyright (c) 2015 jackyshan. All rights reserved.
+//
 
-##步骤
-1、初始化imageview
+#import "ViewController.h"
+#import "ClickImageView.h"
+#import "UIImageView+WebCache.h"
+#import "HDPhotoWindow.h"
 
-```
-ClickImageView *imageView = [[ClickImageView alloc] initWithFrame:CGRectMake(10, 160, 200, 300)];
+@interface ViewController ()<ClickImageViewDelegate>
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"PhotoBroser";
+    
+    ClickImageView *imageView = [[ClickImageView alloc] initWithFrame:CGRectMake(10, 160, 200, 300)];
     [self.view addSubview:imageView];
     [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://jackyshan.gitcafe.io/images/block_alert_view.png"]];
     imageView.delegate = self;
-```
+}
 
-2、初始化model,alertView,实现photowindow
-
-```
 - (void)clickImageTap:(ClickImageView *)view {
     
     HDPhotoModel *model = [[HDPhotoModel alloc] initWithThumbImg:view.image hdUrl:[NSURL URLWithString:@"http://jackyshan.gitcafe.io/images/block_alert_view.png"] srcRect:[self convertToWindow:view]];
@@ -37,4 +52,10 @@ ClickImageView *imageView = [[ClickImageView alloc] initWithFrame:CGRectMake(10,
     
     [[HDPhotoWindow shareInstance] show:model alert:alertView];
 }
-```
+
+- (CGRect)convertToWindow:(UIView *)view {
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    return [view convertRect:view.bounds toView:window];
+}
+
+@end
