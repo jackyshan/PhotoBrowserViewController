@@ -33,6 +33,7 @@
 		185D327D1B8A199F00AC9D63 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D326C1B8A199F00AC9D63 /* UIImageView+WebCache.m */; };
 		185D327E1B8A199F00AC9D63 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 185D326E1B8A199F00AC9D63 /* UIView+WebCacheOperation.m */; };
 		185D32811B8A221400AC9D63 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185D32801B8A221400AC9D63 /* Default-568h@2x.png */; };
+		6DDF48CD1C439B7900A1E6B4 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF48CC1C439B7900A1E6B4 /* PhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		185D326D1B8A199F00AC9D63 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		185D326E1B8A199F00AC9D63 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		185D32801B8A221400AC9D63 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6DDF48CB1C439B7900A1E6B4 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		6DDF48CC1C439B7900A1E6B4 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 				185D321D1B8A17D400AC9D63 /* AppDelegate.m */,
 				185D321F1B8A17D400AC9D63 /* ViewController.h */,
 				185D32201B8A17D400AC9D63 /* ViewController.m */,
+				6DDF48CB1C439B7900A1E6B4 /* PhotoCollectionViewCell.h */,
+				6DDF48CC1C439B7900A1E6B4 /* PhotoCollectionViewCell.m */,
 				185D32251B8A17D400AC9D63 /* Images.xcassets */,
 				185D32181B8A17D400AC9D63 /* Supporting Files */,
 			);
@@ -363,6 +368,7 @@
 				185D324C1B8A195D00AC9D63 /* UIView+FrameHelper.m in Sources */,
 				185D32751B8A199F00AC9D63 /* SDWebImageDownloaderOperation.m in Sources */,
 				185D32731B8A199F00AC9D63 /* SDWebImageDecoder.m in Sources */,
+				6DDF48CD1C439B7900A1E6B4 /* PhotoCollectionViewCell.m in Sources */,
 				185D32441B8A188400AC9D63 /* BlockAlertView.m in Sources */,
 				185D327C1B8A199F00AC9D63 /* UIImageView+HighlightedWebCache.m in Sources */,
 				185D32701B8A199F00AC9D63 /* NSData+ImageContentType.m in Sources */,
@@ -556,6 +562,7 @@
 				185D323A1B8A17D400AC9D63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		185D323B1B8A17D400AC9D63 /* Build configuration list for PBXNativeTarget "PhotoBrowserViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +571,7 @@
 				185D323D1B8A17D400AC9D63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
